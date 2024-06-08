@@ -1,6 +1,5 @@
 import './style.css';
-import doItAll from "./home.js"
+import homeContent from "./home.js"
+import menuContent from "./menu.js"
 
-// alert("waddup web dwellers!");
-
-doItAll();
+homeContent();

@@ -1,9 +1,4 @@
-export default function doItAll(){
-    initialize();
-    console.log("Testing import");
-}
-
-function initialize (){
+export default function homeContent (){
     const divContent = document.getElementById("content");
     // console.log(divContent.childElementCount);
 
@@ -55,7 +50,7 @@ function populateIntro (intro){
     head.textContent = "Intro";
     let para = document.createElement('p');
     para.textContent = `Do you long for some surprise and excitement in your life? Look no further!
-    With Xur's Wander Frozen Delights, you never know where we'll show up next!
+    With Xur's Wandering Frozen Delights, you never know where we'll show up next!
     Maybe while you're out for a Sunday drive, or taking the dog for his mid-afternoon poop-walk. BAM! Xur is there with your
     favorite frozen snack!`;
 
