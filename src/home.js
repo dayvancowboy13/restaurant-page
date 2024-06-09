@@ -5,11 +5,11 @@ export default function homeContent (){
     const title = createTitleNode();
 
     const contents = createContentNodes();
-    console.log(contents.intro);
+    // console.log(contents.intro);
 
     divContent.append(title);
     for (const key in contents) {
-        console.log(contents[key]);
+        // console.log(contents[key]);
         if (Object.hasOwnProperty.call(contents, key)) {
             divContent.append(contents[key]);            
         }
@@ -42,7 +42,7 @@ function createContentNodes(){
     hours = populateHours(hours);
     location = populateLocation(location);
 
-    return {intro, hours, location}
+    return {intro, hours, location};
 }
 
 function populateIntro (intro){
