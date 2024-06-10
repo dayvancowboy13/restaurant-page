@@ -1,11 +1,12 @@
 import './style.css';
 import homeContent from "./home.js"
 import menuContent from "./menu.js"
-import aboutContent from "./about.js"
+import contactContent from "./contact.js"
 import imgTiramisu from "./images/tiramisu.jpg"
 import imgSwiss from "./images/swiss-rolls.jpg"
 import imgLava from "./images/lava-cake.jpg"
 import imgPie from "./images/pumpkin-pie.jpg"
+import imgXur from "./images/xur.png"
 
 initButtons();
 
@@ -31,5 +32,5 @@ function initButtons(){
         while(container.firstChild) {
             container.removeChild(container.lastChild);
         }
-        aboutContent()});
+        contactContent(imgXur)});
 }

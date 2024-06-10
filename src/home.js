@@ -74,21 +74,20 @@ function populateHours(hours) {
     let liFri = document.createElement('li');
     let liSat = document.createElement('li');
 
-    liSun.textContent = "Sunday: 9am - 7pm";
-    liMon.textContent = "Monday: 12pm - 6pm";
-    liTues.textContent = "Tuesday: 2pm - 5pm";
-    liWed.textContent = "Wednesday: 11am - 4pm";
-    liThurs.textContent = "Thursday: 12pm - 6pm";
-    liFri.textContent = "Friday: 9am - 6pm";
-    liSat.textContent = "Saturday: 9am - 7pm";
+    liSun.textContent = "Sunday: 12pm - 9am";
+    liMon.textContent = "Monday: unavailable";
+    liTues.textContent = "Tuesday: unavailable";
+    liWed.textContent = "Wednesday: unavailable";
+    liThurs.textContent = "Thursday: unavailable";
+    liFri.textContent = "Friday: 9am - 12pm";
+    liSat.textContent = "Saturday: all day";
+    ul.append(liFri);
+    ul.append(liSat);
     ul.append(liSun);
     ul.append(liMon);
     ul.append(liTues);
     ul.append(liWed);
     ul.append(liThurs);
-    ul.append(liFri);
-    ul.append(liSat);
-
 
     hours.append(ul);
     return hours;
